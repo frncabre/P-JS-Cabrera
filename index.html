@@ -40,66 +40,62 @@
                 </li>
               </ul>
             </div>
-            <!-- Modal for cart contents 
-            <div id="modalCarrito" class="modal">
-                <div class="contenido-modal">
-                    <span class="cerrar" id="cerrarModal">&times;</span>
-                    <h2>Contenido del Carrito</h2>
-                    <div id="itemsCarrito"></div>
-                    <div id="totalCarrito"></div>
-                </div>
-            </div>
-            Example: Button to display the cart modal 
-            <button id="verCarritoButton">Ver Carrito</button>-->
+            <button id="verCarritoButton" onclick="">Ver Carrito</button>
         </nav>  
     </header>
 
     <section id="nuestros-productos">
         <div class="container">
             <h1>Nuestros Productos</h1>
-            <div class="productos">
+            <div class="productos" id="botones-container">
                 <div class="wow animate__animated animate__backInRight carta">
                     <div>
                         <img src="../media/living.jpg" alt="Imagen del producto">
                         <p class="texto">Este sofá en L gris es elegante, cómodo y duradero. Con un amplio espacio para sentarse, se adapta a diferentes decoraciones y es fácil de mantener limpio. ¡Es la opción perfecta para cualquier hogar moderno!</p>
-                        <a><button class= "botones" value="1" name="Sofa en L gris" onclick="agregarCarrito()">Agregar</button></a>                         
+                        <a><button class= "botones" value="1" name="Sofa en L gris">Agregar</button></a>                         
                     </div>
                 </div>
                 <div class="wow animate__animated animate__backInRight carta">
                     <div>
                         <img src="../media/Esquinero-NY-3c.jpg" alt="Imagen del producto">
                         <p class="texto">Este sofá en L azul es elegante, cómodo y duradero. Con un amplio espacio para sentarse, se adapta a diferentes decoraciones y es fácil de mantener limpio. ¡Es la opción perfecta para cualquier hogar moderno!</p>
-                        <a><button class= "botones" value="2" name="Sofa en L azul" onclick="agregarCarrito()">Agregar</button></a>
+                        <a><button class= "botones" value="2" name="Sofa en L azul">Agregar</button></a>
                     </div>
                 </div>
                 <div class="wow animate__animated animate__backInRight carta">
                     <div>
                         <img src="../media/mueble-tv.jpg" alt="Imagen del producto">
                         <p class="texto">Este mueble de madera para el televisor es elegante, duradero y versátil. Cuenta con amplios compartimentos de almacenamiento y aberturas para cables. ¡Organiza tus dispositivos de entretenimiento con estilo!</p>
-                        <a><button class= "botones" value="3" name="Mueble para televisor" onclick="agregarCarrito()">Agregar</button></a>                         
+                        <a><button class= "botones" value="3" name="Mueble para televisor">Agregar</button></a>                         
                     </div>
                 </div>
                 <div class="wow animate__animated animate__backInRight carta">
                     <div>
                         <img src="../media/mesa-luz.jpg" alt="Imagen del producto">
                         <p class="texto">Esta mesa de luz flotante es perfecta para habitaciones modernas. Con su diseño minimalista, ahorra espacio y crea una sensación de amplitud en la habitación. Hecha con materiales de alta calidad, es resistente y duradera.</p>
-                        <a><button class= "botones" value="4" name="Mesa de Luz flotante" onclick="agregarCarrito()">Agregar</button></a>                         
+                        <a><button class= "botones" value="4" name="Mesa de Luz flotante">Agregar</button></a>                         
                     </div>
                 </div>
                 <div class="wow animate__animated animate__backInRight carta">
                     <div>
                         <img src="../media/baul.jpg" alt="Imagen del producto">
                         <p class="texto">Esta baulera de madera estilo rústico es la solución perfecta para almacenar y organizar tus objetos. Hecha con materiales de alta calidad, es resistente y duradera. Con su diseño rústico, añade un toque de encanto y calidez a cualquier espacio de tu hogar.</p>
-                        <a><button class= "botones" value="5" name="Baulera" onclick="agregarCarrito()">Agregar</button></a>                         
+                        <a><button class= "botones" value="5" name="Baulera">Agregar</button></a>                         
                     </div>
                 </div>
                 <div class="wow animate__animated animate__backInRight carta">
                     <div>
                         <img src="../media/img1.jpg" alt="Imagen del producto">
                         <p class="texto">Esta cajonera de madera es la solución perfecta para organizar y almacenar tus objetos personales. Hecha con materiales de alta calidad, es resistente y duradera. Con su diseño clásico, combina con cualquier estilo de decoración y es perfecta para cualquier habitación de tu hogar.</p>
-                        <a><button class= "botones" value="6" name="Cajonera" onclick="agregarCarrito()">Agregar</button></a>                         
+                        <a><button class= "botones" value="6" name="Cajonera">Agregar</button></a>                         
                     </div>
                 </div>
+            </div>
+            <button id="eliminar">Eliminar Carrito</button>
+            <p id="total">Total: $0.00</p>
+            <div id="carrito">
+                <h2>Productos en el Carrito:</h2>
+                <ul id="productos-en-carrito"></ul>
             </div>
     </section>
     <footer>
