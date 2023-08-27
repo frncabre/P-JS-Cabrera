@@ -1,14 +1,23 @@
-const lista_productos = {
-  'Sofa en L gris': 1000,
-  'Sofa en L azul': 2000,
-  'Mueble para televisor': 3000,
-  'Mesa de Luz flotante': 4000,
-  'Baulera': 5000,
-  'Cajonera': 6000
-};
+const lista_productos = {};
 
 let productos = []
 let total = 0
+
+async function cargarProductosDesdeJSON() {
+  try {
+    const response = await fetch('/js/productos.json');
+    const data = await response.json();
+
+    data.forEach(producto => {
+      lista_productos[producto.nombre] = producto.precio;
+    });
+
+    actualizarProductosEnCarrito();
+  } catch (error) {
+    console.error('Error al cargar los productos:', error);
+  }
+}
+
 
 function getPrecio(nombreProd) {
   return lista_productos[nombreProd] || 0;
@@ -72,9 +81,12 @@ function agregarCarrito(){
 }
 
 
-agregarCarrito();
-actualizarTotal();
-actualizarProductosEnCarrito();
- 
-document.getElementById("eliminar").addEventListener("click", eliminar);
+document.addEventListener("DOMContentLoaded", () => {
+  cargarProductosDesdeJSON();
+  agregarCarrito();
+  actualizarTotal();
+  actualizarProductosEnCarrito();
   
+  document.getElementById("eliminar").addEventListener("click", eliminar);
+});
+

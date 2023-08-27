@@ -1,0 +1,38 @@
+[
+    {
+      "nombre": "Sofa en L gris",
+      "precio": 1000,
+      "imagen": "../media/living.jpg",
+      "descripcion": "Este sofá en L gris es elegante, cómodo y duradero. Con un amplio espacio para sentarse, se adapta a diferentes decoraciones y es fácil de mantener limpio. ¡Es la opción perfecta para cualquier hogar moderno!"
+    },
+    {
+      "nombre": "Sofa en L azul",
+      "precio": 2000,
+      "imagen": "../media/Esquinero-NY-3c.jpg",
+      "descripcion": "Este sofá en L azul es elegante, cómodo y duradero. Con un amplio espacio para sentarse, se adapta a diferentes decoraciones y es fácil de mantener limpio. ¡Es la opción perfecta para cualquier hogar moderno!"
+    },
+    {
+      "nombre": "Mueble para televisor",
+      "precio": 3000,
+      "imagen": "../media/mueble-tv.jpg",
+      "descripcion": "Este mueble de madera para el televisor es elegante, duradero y versátil. Cuenta con amplios compartimentos de almacenamiento y aberturas para cables. ¡Organiza tus dispositivos de entretenimiento con estilo!"
+    },
+    {
+      "nombre": "Mesa de Luz flotante",
+      "precio": 4000,
+      "imagen": "../media/mesa-luz.jpg",
+      "descripcion": "Esta mesa de luz flotante es perfecta para habitaciones modernas. Con su diseño minimalista, ahorra espacio y crea una sensación de amplitud en la habitación. Hecha con materiales de alta calidad, es resistente y duradera."
+    },
+    {
+      "nombre": "Baulera",
+      "precio": 5000,
+      "imagen": "../media/baul.jpg",
+      "descripcion": "Esta baulera de madera estilo rústico es la solución perfecta para almacenar y organizar tus objetos. Hecha con materiales de alta calidad, es resistente y duradera. Con su diseño rústico, añade un toque de encanto y calidez a cualquier espacio de tu hogar."
+    },
+    {
+      "nombre": "Cajonera",
+      "precio": 6000,
+      "imagen": "../media/img1.jpg",
+      "descripcion": "Esta cajonera de madera es la solución perfecta para organizar y almacenar tus objetos personales. Hecha con materiales de alta calidad, es resistente y duradera. Con su diseño clásico, combina con cualquier estilo de decoración y es perfecta para cualquier habitación de tu hogar."
+    }
+]
